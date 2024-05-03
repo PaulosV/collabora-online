@@ -105,8 +105,8 @@ class TopToolbar extends JSDialog.Toolbar {
 			{type: 'customtoolitem',  id: 'print', command: 'print', text: _UNO('.uno:Print', 'text'), mobile: false, tablet: false, lockUno: '.uno:Print'},
 			{type: 'menubutton',  id: 'printoptions',  command: 'printoptions', noLabel: true, text: _UNO('.uno:Print', 'text'), mobile: false, tablet: false, lockUno: '.uno:Print',
 				menu: [
-					{id: 'print-active-sheet', action: 'print-active-sheet', text: _('Active Sheet')},
-					{id: 'print-all-sheets', action: 'print-all-sheets', text: _('All Sheets')},
+					{id: 'print-active-sheet', command: 'print-active-sheet', text: _('Active Sheet')},
+					{id: 'print-all-sheets', command: 'print-all-sheets', text: _('All Sheets')},
 				]
 			},
 			{type: 'separator', orientation: 'vertical', id: 'savebreak', mobile: false},
